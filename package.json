@@ -2,19 +2,19 @@
   "//1": "describes your app and its dependencies",
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
-  "name": "your-bot-name",
+  "name": "is-it-friday",
   "version": "1.0.0",
-  "description": "",
-  "author": "github-username <email-address>",
-  "license": "ISC",
-  "repository": "https://github.com/probot/hello-world.git",
+  "description": "Checks whether it is Friday or not",
+  "author": "plopcas",
+  "license": "MIT",
+  "repository": "https://github.com/plopcas/is-it-friday.git",
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
     "start": "probot run ./index.js",
     "test": "jest && standard"
   },
   "dependencies": {
-    "probot": "^9.0.0"
+    "probot": "^9.2.8"
   },
   "devDependencies": {
     "jest": "^23.2.0",
