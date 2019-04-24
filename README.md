@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/plopcas/is-it-friday.svg?branch=master)](https://travis-ci.org/plopcas/is-it-friday)
+
 Welcome to Probot on Glitch
 =========================
 
