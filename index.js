@@ -18,7 +18,7 @@ module.exports = app => {
       }
     }));
     
-    if(startTime.getDay() == 3 ) {
+    if(startTime.getDay() == 5 ) {
       result = context.github.checks.create(context.repo({
         name: 'Is it Friday?',
         head_branch: headBranch,
