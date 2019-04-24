@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "description": "Checks whether it is Friday or not",
   "author": "plopcas",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/plopcas/is-it-friday.git",
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
@@ -14,7 +14,7 @@
     "test": "jest && standard"
   },
   "dependencies": {
-    "probot": "^9.0.0"
+    "probot": "^9.2.8"
   },
   "devDependencies": {
     "jest": "^23.2.0",
