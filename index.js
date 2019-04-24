@@ -21,7 +21,7 @@ module.exports = app => {
       conclusion: 'success',
       completed_at: new Date(),
       output: {
-        title: 'No, it is not, today it is ' + getWeekDay(startTime),
+        title: 'No, today it is ' + getWeekDay(startTime),
         summary: 'It is not Friday, please go ahead and merge.'
       }
     }));
