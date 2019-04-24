@@ -129,7 +129,7 @@ default_permissions:
 name: Is It Friday?
 
 # The homepage of your GitHub App.
-# url: https://example.com/
+url: https://is-it-friday.glitch.me
 
 # A description of the GitHub App.
 description: Shows a notification in the Pull Request if it is Friday, are you sure you want to merge it?
