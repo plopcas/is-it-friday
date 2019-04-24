@@ -1,3 +1,11 @@
+function getWeekDay(date){
+    var weekdays = new Array(
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    );
+    var day = date.getDay();
+    return weekdays[day];
+}
+
 module.exports = app => {
   app.on(['check_suite.requested', 'check_run.rerequested'], check);
 
@@ -13,7 +21,7 @@ module.exports = app => {
       conclusion: 'success',
       completed_at: new Date(),
       output: {
-        title: 'No, it is not',
+        title: 'No, it is not, today it is ' + getWeekDay(startTime),
         summary: 'It is not Friday, please go ahead and merge.'
       }
     }));
@@ -28,8 +36,8 @@ module.exports = app => {
         conclusion: 'failure',
         completed_at: new Date(),
         output: {
-          title: 'Yes! 🚨🚨It is Friday🚨🚨',
-          summary: 'Are you sure you want to merge?',
+          title: 'Yes! 🚨It is Friday🚨 Are you sure you want to merge?',
+          summary: 'Think about your colleagues on-call, do not merge unless it is urgent, they will thank you for that.',
           "images": [
             {
               "alt": "Begging Cat",
